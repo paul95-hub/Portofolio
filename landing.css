@@ -1,0 +1,19 @@
+body {
+  background: url('https://images.unsplash.com/photo-1558544956-15f3c317e06a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+h3,#name,#table-responsive{
+    color:white;
+}
+
+.container-fluid {
+   padding-bottom: 150px;
+}
+
+#carouselExampleIndicators{
+    padding-left: 150px;
+    padding-right: 150px;
+}

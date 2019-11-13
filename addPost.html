@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<script>function redirect() {
+  window.location.replace("viewBlog.php");
+  return false;
+}</script>
+<body>
+
+<h2>Add Blog</h2>
+
+<form id="myForm" action="addPost.php" method="POST" name="Form" >
+  <input type="hidden" name="redirect" value="viewBlog.php" />
+  Title:<br>
+  <input type="text" name="title" value="Title" required>
+  <br>
+  Your Text:<br>
+  <input type="text" name="cont" value="Enter your text here" required>
+  <br><br>
+ <input type="submit" name="submitform">
+ <button type="button" onclick="myFunction()">clear</button>
+ <a href="https://www.facebook.com/sharer/sharer.php?u=http://webprojects.eecs.qmul.ac.uk/pct30/portofolio/index.php" target="_blank">
+   Share on Facebook
+ </a>
+
+
+ <script>
+ function myFunction() {
+   var txt;
+   var r = confirm("Press OK to RESET");
+   if (r == true) {
+     document.getElementById("myForm").reset();
+   }
+
+ }
+ </script>
+</form>
+
+
+</body>
+</html>
